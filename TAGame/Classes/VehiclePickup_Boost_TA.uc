@@ -24,11 +24,11 @@ var() private VehiclePickup_Boost_TA.EBoostType BoostType;
 
 defaultproperties
 {
-	SpawnSpriteTexture=Texture2D'EditorMaterials.TargetIconSpawn'
+	SpawnSpriteTexture=Texture2D'EditorResources.TargetIconSpawn'
 
 	Begin Object Name=Sprite
-		Sprite=Texture2D'EditorRL.Textures.BoostIcon'
-		Scale=0.35
+		Sprite=Texture2D'EditorResources.S_KVehFact'
+		Scale=1
 		HiddenGame=true
 		AlwaysLoadOnClient=false
 		AlwaysLoadOnServer=false

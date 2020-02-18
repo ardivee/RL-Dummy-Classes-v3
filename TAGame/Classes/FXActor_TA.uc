@@ -28,8 +28,8 @@ defaultproperties
 	SpawnSpriteTexture=Texture2D'EditorMaterials.TargetIconSpawn'
 
 	Begin Object Name=Sprite
-		Sprite=Texture2D'EditorMaterials.TargetIcon'
-		Scale=0.35
+		Sprite=Texture2D'EditorResources.MatIcon_FX'
+		Scale=1
 		HiddenGame=true
 		AlwaysLoadOnClient=false
 		AlwaysLoadOnServer=false

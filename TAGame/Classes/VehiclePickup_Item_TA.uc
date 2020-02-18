@@ -10,7 +10,6 @@ class VehiclePickup_Item_TA extends VehiclePickup_TA
 var() private SpecialPickup_TA ItemArchetype;
 var private repnotify FXActor_X ReplicatedFXActorArchetype;
 
-
 simulated event ReplicatedEvent(name VarName){}
 
 final simulated function SetFXActorArchetype(FXActor_X InArchetype){}
@@ -18,3 +17,17 @@ final simulated function SetFXActorArchetype(FXActor_X InArchetype){}
 protected function bool CanPickup(Car_TA Car){}
 
 singular function Pickup(Car_TA Car){}
+
+defaultproperties
+{
+	SpawnSpriteTexture=Texture2D'EditorResources.TargetIconSpawn'
+
+	Begin Object Name=Sprite
+		Sprite=Texture2D'EditorResources.S_Pickup'
+		Scale=1
+		HiddenGame=true
+		AlwaysLoadOnClient=false
+		AlwaysLoadOnServer=false
+		SpriteCategoryName="ItemIcon"
+	End Object
+}
