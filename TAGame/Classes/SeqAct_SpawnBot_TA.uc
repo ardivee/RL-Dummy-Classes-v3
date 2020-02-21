@@ -28,6 +28,6 @@ defaultproperties
 
 event Activated()
 {
-   local AIController_TA AIC;
-   local WorldInfo WI;
+   //local AIController_TA AIC;
+   //local WorldInfo WI;
 }

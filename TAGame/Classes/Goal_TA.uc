@@ -46,11 +46,11 @@ defaultproperties
 	PointsToAward=1
 	AutoCamFocusExtent=(X=2250.0,Y=4250.0,Z=4000.0)
 	MaxGoalScorerAttachRadius=4000.0
-	GoalScoredDotDirection=(X=1.0,Y=0.0,Z=0.0)
+	//GoalScoredDotDirection=(X=1.0,Y=0.0,Z=0.0)
 	MinAttachGoalToScorerDot=0.050
 }
 
 protected event BeginPlay()
 {
-	local Box ActorBox;
+	//local Box ActorBox;
 }

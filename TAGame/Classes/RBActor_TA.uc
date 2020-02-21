@@ -129,16 +129,16 @@ defaultproperties
     Health=1000
     HealthMax=1000
 	
-	begin object name=CollisionCylinder
+	/*begin object name=CollisionCylinder
         ReplacementPrimitive=none
         BlockActors=false
         BlockZeroExtent=false
     object end
-    CylinderComponent=CollisionCylinder
+    CylinderComponent=CollisionCylinder*/
 	
-	Physics=EPhysics.PHYS_RigidBody
-    CollisionType=ECollisionType.COLLIDE_CustomDefault
-    TickGroup=ETickingGroup.TG_PostAsyncWork
+	//Physics=EPhysics.PHYS_RigidBody
+    //CollisionType=ECollisionType.COLLIDE_CustomDefault
+    //TickGroup=ETickingGroup.TG_PostAsyncWork
     bReplicateMovement=false
     bNetInitialRotation=true
     bNoEncroachCheck=true

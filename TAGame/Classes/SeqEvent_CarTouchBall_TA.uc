@@ -13,10 +13,10 @@ defaultproperties
 {
     MaxTriggerCount=0
     bPlayerOnly=false
-    OutputLinks(0)=(LinkDesc="On Touch",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    OutputLinks(1)=(LinkDesc="Already Touched",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Ball",LinkVar=None,PropertyName=Originator,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Car",LinkVar=None,PropertyName=Instigator,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    OutputLinks(0)=(LinkDesc="On Touch")
+    OutputLinks(1)=(LinkDesc="Already Touched")
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Ball",PropertyName=Originator,bWriteable=true)
+    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Car",PropertyName=Instigator,bWriteable=true)
     ObjName="Car Touch Ball"
 	ObjCategory="TAGame"
 }

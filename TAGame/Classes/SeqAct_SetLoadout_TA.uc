@@ -22,10 +22,10 @@ defaultproperties
 
 event Activated()
 {
-	local Object O;
-    local Car_TA Car;
-    local ClientLoadoutData Loadout;
-    local ProductAsset_TA Product;
+	//local Object O;
+    //local Car_TA Car;
+    //local ClientLoadoutData Loadout;
+    //local ProductAsset_TA Product;
 	
 	//Return
 }

@@ -11,7 +11,7 @@ var private Actor RBObj;
 
 defaultproperties
 {
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkedVariables=none,LinkDesc="RB Actor",LinkVar=None,PropertyName=RBObj,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="RB Actor",PropertyName=RBObj,bWriteable=false)
     ObjName="Terminate RB Physics"
 	ObjCategory="TAGame"
 }

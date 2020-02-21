@@ -38,6 +38,6 @@ defaultproperties
 
 final function Vector ClampToField(Vector V)
 {
-	local Vector LocalOffset;
+	//local Vector LocalOffset;
 	//Return
 }

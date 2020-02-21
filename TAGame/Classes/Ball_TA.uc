@@ -85,7 +85,7 @@ simulated function SetBallScale(float NewScale)
 
 simulated function SetWorldBounceScale(float NewScale)
 {	
-	local PhysicalMaterial PhysMaterial;
+	//local PhysicalMaterial PhysMaterial;
 	//Return
 }
 
@@ -111,7 +111,7 @@ simulated function Reset()
 
 function RecordCarHit(Car_TA HitCar, Vector HitLocation, Vector HitNormal)
 {
-    local BallHitInfo Hit;
+    //local BallHitInfo Hit;
 	
 	//Return
 }
@@ -146,9 +146,9 @@ defaultproperties
 {
 	Begin Object Class=StaticMeshComponent Name=DefaultMesh
 		ReplacementPrimitive=none
-        RBChannel=ERBCollisionChannel.RBCC_Ball
+        //RBChannel=ERBCollisionChannel.RBCC_Ball
         bNotifyRigidBodyCollision=true
-        RBCollideWithChannels=(Default=true,Vehicle=true,GameplayPhysics=true,EffectPhysics=true,Ball=true,BlockingVolume=true)
+        //RBCollideWithChannels=(Default=true,Vehicle=true,GameplayPhysics=true,EffectPhysics=true,Ball=true,BlockingVolume=true)
         ScriptRigidBodyCollisionThreshold=0.000010
 	End Object
 	
@@ -176,8 +176,8 @@ defaultproperties
     Replay=ReplayComponent0
     LegacyTakeDamageComponent=LegacyTakeDamageComponent0
 	Mass=30.0
-	CollisionType=ECollisionType.COLLIDE_BlockAll
-    bGameInstanceRelevant=true
+	//CollisionType=ECollisionType.COLLIDE_BlockAll
+    //bGameInstanceRelevant=true
     BlockRigidBody=true
     NetPriority=10.0
 	CollisionComponent=DefaultMesh

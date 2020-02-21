@@ -108,9 +108,9 @@ state Active
 {
 	function HandleHitGoal(Ball_TA Ball, Goal_TA Goal)
 	{
-		local int ScoreIndex, AssistIndex, PointsTeamNum;
-        local PRI_TA ScorerPRI;
-        local Controller C;
+		//local int ScoreIndex, AssistIndex, PointsTeamNum;
+        //local PRI_TA ScorerPRI;
+        //local Controller C;
 	}
 
 }

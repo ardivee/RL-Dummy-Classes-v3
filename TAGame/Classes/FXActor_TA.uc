@@ -16,23 +16,41 @@ var private array<private FXActorEvent_X> TeamStates;
 
 defaultproperties
 {
-	HideWorldUIState=FXActorEvent_X'FXActorEvents.HideWorldUI'
-    PreviewState=FXActorEvent_X'FXActorEvents.Preview'
-    PaintedState=FXActorEvent_X'FXActorEvents.Painted'
-    TeamStates(0)=FXActorEvent_X'FXActorEvents.Team0'
-    TeamStates(1)=FXActorEvent_X'FXActorEvents.Team1'
-    SpawnState=FXActorEvent_X'FXActorEvents.Spawned'
-    ActivationState=FXActorEvent_X'FXActorEvents.Active'
-    Parameters=ParameterDispenser_X'Default__FXActor_TA.DefaultParameters'
+	//HideWorldUIState=FXActorEvent_X'FXActorEvents.HideWorldUI'
+    //PreviewState=FXActorEvent_X'FXActorEvents.Preview'
+    //PaintedState=FXActorEvent_X'FXActorEvents.Painted'
+    //TeamStates(0)=FXActorEvent_X'FXActorEvents.Team0'
+    //TeamStates(1)=FXActorEvent_X'FXActorEvents.Team1'
+    //SpawnState=FXActorEvent_X'FXActorEvents.Spawned'
+    //ActivationState=FXActorEvent_X'FXActorEvents.Active'
+    //Parameters=ParameterDispenser_X'Default__FXActor_TA.DefaultParameters'
 
-	SpawnSpriteTexture=Texture2D'EditorMaterials.TargetIconSpawn'
-
-	Begin Object Name=Sprite
+	Begin Object Class=SpriteComponent Name=Sprite
 		Sprite=Texture2D'EditorResources.MatIcon_FX'
-		Scale=1
-		HiddenGame=true
-		AlwaysLoadOnClient=false
-		AlwaysLoadOnServer=false
-		SpriteCategoryName="BoostIcon"
+		Scale=2
+		HiddenGame=True
+		AlwaysLoadOnClient=False
+		AlwaysLoadOnServer=False
+		SpriteCategoryName="FXActor"
 	End Object
+	Components.Add(Sprite)
+	
 }
+
+simulated function PostBeginPlay(){}
+
+event OnOwnerChanged(){}
+
+protected final function SetCarActorParam(Car_TA InCar){}
+
+private final function HandleHideWorldUIChanged(GameShare_TA G){}
+
+//function ApplyPaint(ProductAttribute_PaintSettings_TA PaintSettings, ProductPaint_TA Paint){}
+
+//final function ApplyPaintToAttachment(const out FXAttachment FXAttach, ProductAttribute_PaintSettings_TA PaintSettings, ProductPaint_TA Paint){}
+
+static final function ClearPaintParameters(FXActor_X FXActor){}
+
+final simulated function OnSetParticleSysParam(SeqAct_SetParticleSysParam Action){}
+
+private static final function __FXActor_TA__ClearPaintParameters_1158CCE440847F2ED760D4B3B54D1853(ParticleSystemComponent BeamPSC){}

@@ -69,7 +69,7 @@ defaultproperties
 {
     RelativeForceNormalDirection=1.0
     MaxSpringLength=99999.0
-    BallHitType=EBallHitType.HitType_Item1
+    //BallHitType=EBallHitType.HitType_Item1
     MinSpringLength=30.0
     WeldedForceScalar=1.0
 }

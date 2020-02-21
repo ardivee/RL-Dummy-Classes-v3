@@ -4,6 +4,7 @@
 * All rights belong to their respective owners.
 *******************************************************************************/
 class FXActor_X extends Actor
+    abstract
     placeable
     hidecategories(Navigation);
 
@@ -32,7 +33,7 @@ enum EAttachActorLocationUnlockFlags
     EAALUF_MAX
 };
 
-struct native FXEventSubscription
+struct FXEventSubscription
 {
     var private FXActorEvent_X Event;
     var private delegate<EventFXStatePushed> OnPushed;
@@ -44,7 +45,7 @@ struct native FXEventSubscription
     }
 };
 
-struct native AttachToParameterWithUnlockAxes
+struct AttachToParameterWithUnlockAxes
 {
     var() private name Parameter;
     var() private FXActor_X.EAttachActorLocationUnlockFlags IgnoredAxis;
@@ -52,11 +53,11 @@ struct native AttachToParameterWithUnlockAxes
     structdefaultproperties
     {
         Parameter=None
-        IgnoredAxis=EAttachActorLocationUnlockFlags.EAALUF_None
+        //IgnoredAxis=EAttachActorLocationUnlockFlags.EAALUF_None
     }
 };
 
-struct native FXAttachment
+struct FXAttachment
 {
     var() private name Name;
     var() private name SkeletalMeshAttachName;
@@ -96,21 +97,21 @@ struct native FXAttachment
         AttachDelay=0.0
         DetachDelay=0.0
         LifeTime=0.0
-        Target=EFXComponentTarget.FXComponentTarget_All
+        //Target=EFXComponentTarget.FXComponentTarget_All
         Component=none
-        AttachAny=none
-        DetachAny=none
-        AttachAll=none
-        RuntimeParameters=none
-        Traits=none
-        AttachToParameterActor=(Parameter=None,IgnoredAxis=EAttachActorLocationUnlockFlags.EAALUF_None)
+        //AttachAny=none
+        //DetachAny=none
+        //AttachAll=none
+        //RuntimeParameters=none
+        //Traits=none
+        //AttachToParameterActor=(Parameter=None,IgnoredAxis=EAttachActorLocationUnlockFlags.EAALUF_None)
         bCreateDuplicates=false
         bWantsAttachment=false
         bInitializedTraits=false
         bExistingComponent=false
         bExistingAttachment=false
         AttachedTime=0.0
-        State=EFXComponentState.FXComponentState_Detached
+        //State=EFXComponentState.FXComponentState_Detached
         WantsAttachmentChangeTime=0.0
         AttachedToMesh=none
         RelativeTransform=(XPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),YPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),ZPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0),WPlane=(X=0.0,Y=0.0,Z=0.0,W=0.0))
@@ -122,7 +123,7 @@ struct native FXAttachment
 
 var private FXActorEvent_X SpawnState;
 var private FXActorEvent_X ActivationState;
-var() /*0x00020000-0x00000000*/ private array<private FXAttachment> Attachments;
+var() private array<private FXAttachment> Attachments;
 var() private name SocketOrBoneName;
 var() private bool bDeactivateWhenOwnerDestroyed;
 var() private bool bAllowShadowCasting;
@@ -141,44 +142,35 @@ var privatewrite const transient array<private FXEventSubscription> EventSubscri
 var private delegate<EventFXStatePushed> __EventFXStatePushed__Delegate;
 var private delegate<EventFXStatePopped> __EventFXStatePopped__Delegate;
 
+var() private bool bDedicatedServerRelevant;
+
 var() SpriteComponent SpriteComp;
 
 defaultproperties
 {
-    Begin Object Class=SpriteComponent Name=Sprite
-		Sprite=Texture2D'EditorResources.S_Keypoint'
-		HiddenGame=True
-		AlwaysLoadOnClient=False
-		AlwaysLoadOnServer=False
-		SpriteCategoryName="VehiclePickup"
-	End Object
-	Components.Add(Sprite)
-	SpriteComp=Sprite;
-
 	Begin Object Class=ParameterDispenser_X Name=DefaultParameters
 	End Object
 
     bDeactivateWhenOwnerDestroyed=true
     bAutoActivate=true
     DestroyWaitTime=10.0
-    Parameters=ParameterDispenser_X'Default__FXActor_X.DefaultParameters'
-    TickGroup=ETickingGroup.TG_PostAsyncWork
+    Parameters=DefaultParameters
+    TickGroup=TG_PostAsyncWork
     bAlwaysRelevant=true
     bHardAttach=true
     bDedicatedServerRelevant=false
+    bEdShouldSnap = true
 }
 
 final delegate EventFXStatePushed(FXActor_X FXActor, FXActorEvent_X Event){}
 
 final delegate EventFXStatePopped(FXActor_X FXActor, FXActorEvent_X Event){}
-/*
-
 
 // Export UFXActor_X::execGetComponentByName(FFrame&, void* const)
-native final simulated function ActorComponent GetComponentByName(class ComponentClass, name ComponentName){}
+final simulated function ActorComponent GetComponentByName(class ComponentClass, name ComponentName){}
 
 // Export UFXActor_X::execAllAttachments(FFrame&, void* const)
-native final iterator simulated function AllAttachments(class ComponentClass, out ActorComponent OutComponent, optional out int OutAttachmentIdx){}
+final simulated function AllAttachments(class ComponentClass, out ActorComponent OutComponent, optional out int OutAttachmentIdx){}
 
 simulated function PostBeginPlay(){}
 
@@ -191,31 +183,31 @@ private final simulated function HandleParentStatePushed(FXActor_X P, FXActorEve
 private final simulated function HandleParentStatePopped(FXActor_X P, FXActorEvent_X Event){}
 
 // Export UFXActor_X::execActivate(FFrame&, void* const)
-native final function Activate(){}
+final function Activate(){}
 
 // Export UFXActor_X::execDeactivate(FFrame&, void* const)
-native final function Deactivate(){}
+final function Deactivate(){}
 
 // Export UFXActor_X::execIsStateActive(FFrame&, void* const)
-native final simulated function bool IsStateActive(FXActorEvent_X InState){}
+final simulated function bool IsStateActive(FXActorEvent_X InState){}
 
 // Export UFXActor_X::execAddState(FFrame&, void* const)
-native final simulated function AddState(FXActorEvent_X NewState){}
+final simulated function AddState(FXActorEvent_X NewState){}
 
 // Export UFXActor_X::execRemoveState(FFrame&, void* const)
-native final simulated function bool RemoveState(FXActorEvent_X OldState){}
+final simulated function bool RemoveState(FXActorEvent_X OldState){}
 
 // Export UFXActor_X::execToggleState(FFrame&, void* const)
-native final simulated function ToggleState(FXActorEvent_X NewState){}
+final simulated function ToggleState(FXActorEvent_X NewState){}
 
 // Export UFXActor_X::execGetControllerOwner(FFrame&, void* const)
-protected native final simulated function Controller GetControllerOwner(){}
+protected final simulated function Controller GetControllerOwner(){}
 
 // Export UFXActor_X::execIsLocallyControlled(FFrame&, void* const)
-protected native final simulated function bool IsLocallyControlled(){}
+protected final simulated function bool IsLocallyControlled(){}
 
 // Export UFXActor_X::execUpdateFXStates(FFrame&, void* const)
-protected native final simulated function UpdateFXStates(){}
+protected final simulated function UpdateFXStates(){}
 
 protected final simulated event OnAttached(ActorComponent AC){}
 
@@ -240,12 +232,11 @@ final simulated function OnToggle(SeqAct_Toggle Action){}
 final simulated function SetStateEnabled(FXActorEvent_X State, bool bEnable){}
 
 // Export UFXActor_X::execSubscribeState(FFrame&, void* const)
-native final function SubscribeState(FXActorEvent_X FXEvent, optional delegate<EventFXStatePushed> OnPushed, optional delegate<EventFXStatePushed> OnPopped){}
+final function SubscribeState(FXActorEvent_X FXEvent, optional delegate<EventFXStatePushed> OnPushed, optional delegate<EventFXStatePushed> OnPopped){}
 
 event Destroyed(){}
 
 // Export UFXActor_X::execGetTrait(FFrame&, void* const)
-native final function FXAttachmentTraitBase_X GetTrait(class TraitClass, int AttachmentIdx){}
+final function FXAttachmentTraitBase_X GetTrait(class TraitClass, int AttachmentIdx){}
 
 final event DumpDebugInfo(){}
-*/

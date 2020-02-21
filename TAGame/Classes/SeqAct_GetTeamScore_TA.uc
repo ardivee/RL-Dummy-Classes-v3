@@ -22,5 +22,5 @@ defaultproperties
 
 event Activated()
 {
-	local name GameShare, GameEvent;
+	//local name GameShare, GameEvent;
 }

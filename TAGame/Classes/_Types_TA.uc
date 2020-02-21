@@ -468,9 +468,9 @@ struct native BallHitInfo
         AttackerPRI=none
         CarName=None
         TeamNum=0
-        PreHitCarPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
-        PreHitBallPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
-        PostHitBallPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
+        //PreHitCarPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
+        //PreHitBallPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
+        //PostHitBallPhysics=(Location=(X=0.0,Y=0.0,Z=0.0),Rotation=(Pitch=0,Yaw=0,Roll=0),LinearVelocity=(X=0.0,Y=0.0,Z=0.0),AngularVelocity=(X=0.0,Y=0.0,Z=0.0),bSleeping=false,bNewData=false)
         Distance=0.0
         Time=0.0
         HitLocation=(X=0.0,Y=0.0,Z=0.0)

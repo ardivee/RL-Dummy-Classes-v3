@@ -57,30 +57,30 @@ event Activated()
 
 protected function SpawnAccentCars(CarColorSet_TA AccentColorSet, LinearColor TeamColor)
 {
-    local int X, Y, ColorID;
-    local float OffsetX, OffsetY;
+    //local int X, Y, ColorID;
+    //local float OffsetX, OffsetY;
 	//Return
 }
 
 protected function SpawnTeamCars(CarColorSet_TA TeamColorSet, LinearColor AccentColor)
 {
-    local int X, Y, ColorID;
-    local float OffsetX, OffsetY;
-    local CarPreviewActor_TA SpawnedCar;
+    //local int X, Y, ColorID;
+    //local float OffsetX, OffsetY;
+    //local CarPreviewActor_TA SpawnedCar;
 	//Return
 }
 
 protected final function LinearColor GetRGBFromColorSet(LinearColor Hue, LinearColor SV)
 {
-    local LinearColor HSV;
+    //local LinearColor HSV;
 	//Return
 }
 
 protected function CarPreviewActor_TA SpawnCar(LinearColor TeamColor, LinearColor AccentColor, float OffsetX, float OffsetY)
 {
-    local Vector Location;
-    local Rotator Rotation;
-    local CarPreviewActor_TA PreviewActor;
-    local LoadoutData Loadout;
+    //local Vector Location;
+    //local Rotator Rotation;
+    //local CarPreviewActor_TA PreviewActor;
+    //local LoadoutData Loadout;
 	//Return
 }

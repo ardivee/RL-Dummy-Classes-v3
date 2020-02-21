@@ -24,16 +24,15 @@ var() private VehiclePickup_Boost_TA.EBoostType BoostType;
 
 defaultproperties
 {
-	SpawnSpriteTexture=Texture2D'EditorResources.TargetIconSpawn'
-
-	Begin Object Name=Sprite
+	Begin Object Class=SpriteComponent Name=Sprite
 		Sprite=Texture2D'EditorResources.S_KVehFact'
-		Scale=1
-		HiddenGame=true
-		AlwaysLoadOnClient=false
-		AlwaysLoadOnServer=false
-		SpriteCategoryName="BoostIcon"
+		Scale=2
+		HiddenGame=True
+		AlwaysLoadOnClient=False
+		AlwaysLoadOnServer=False
+		SpriteCategoryName="VehiclePickupBoost"
 	End Object
+	Components.Add(Sprite)
 }
 
 protected function bool CanPickup(Car_TA Car){}

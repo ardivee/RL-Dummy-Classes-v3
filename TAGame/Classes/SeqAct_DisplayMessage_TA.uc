@@ -41,8 +41,8 @@ event Activated()
 
 function DisplayMessage(PlayerController_TA PC)
 {
-    local GFxShell_TA Shell;
-    local GFxModal_X Modal;
+    //local GFxShell_TA Shell;
+    //local GFxModal_X Modal;
 }
 
 function HandleButtonOneClick(GFxModal_X Modal)

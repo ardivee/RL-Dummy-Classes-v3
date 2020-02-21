@@ -22,6 +22,6 @@ defaultproperties
 
 event Activated()
 {
-	local byte PRI;
+	//local byte PRI;
     //return;    
 }

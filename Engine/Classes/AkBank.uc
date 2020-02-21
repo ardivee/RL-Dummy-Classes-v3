@@ -22,7 +22,7 @@ struct native BankLoadState
 
     structdefaultproperties
     {
-        Status=EBankLoadStatus.BLS_Unloaded
+        //Status=EBankLoadStatus.BLS_Unloaded
         AsyncLoadBegin=0.0
         AsyncLoadTimeout=0.0
     }
@@ -36,5 +36,5 @@ defaultproperties
 {
     AutoLoad=true
     GenerateDefinition=true
-    LoadState=(Status=EBankLoadStatus.BLS_Unloaded,AsyncLoadBegin=-1.0,AsyncLoadTimeout=10.0)
+    //LoadState=(Status=EBankLoadStatus.BLS_Unloaded,AsyncLoadBegin=-1.0,AsyncLoadTimeout=10.0)
 }

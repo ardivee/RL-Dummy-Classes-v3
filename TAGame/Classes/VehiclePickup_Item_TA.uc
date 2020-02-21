@@ -20,14 +20,13 @@ singular function Pickup(Car_TA Car){}
 
 defaultproperties
 {
-	SpawnSpriteTexture=Texture2D'EditorResources.TargetIconSpawn'
-
-	Begin Object Name=Sprite
+	Begin Object Class=SpriteComponent Name=Sprite
 		Sprite=Texture2D'EditorResources.S_Pickup'
-		Scale=1
-		HiddenGame=true
-		AlwaysLoadOnClient=false
-		AlwaysLoadOnServer=false
-		SpriteCategoryName="ItemIcon"
+		Scale=2
+		HiddenGame=True
+		AlwaysLoadOnClient=False
+		AlwaysLoadOnServer=False
+		SpriteCategoryName="VehiclePickupItem"
 	End Object
+	Components.Add(Sprite)
 }

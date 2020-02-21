@@ -50,8 +50,8 @@ var() SpriteComponent SpriteComp;
 
 defaultproperties
 {
-    PickedUpEvent=FXActorEvent_X'FXActorEvents.PickedUp'
-    LocalPickedUpEvent=FXActorEvent_X'FXActorEvents.LocalPickedUp'
+    //PickedUpEvent=FXActorEvent_X'FXActorEvents.PickedUp'
+    //LocalPickedUpEvent=FXActorEvent_X'FXActorEvents.LocalPickedUp'
     bNoDelete=true
     bAlwaysRelevant=true
     bReplicateMovement=false
@@ -61,19 +61,9 @@ defaultproperties
     bCollideActors=true
     NetUpdateFrequency=1.0
 
-
-	Begin Object Class=SpriteComponent Name=Sprite
-		Sprite=Texture2D'EditorResources.S_Keypoint'
-		HiddenGame=True
-		AlwaysLoadOnClient=False
-		AlwaysLoadOnServer=False
-		SpriteCategoryName="VehiclePickup"
-	End Object
-	Components.Add(Sprite)
-	SpriteComp=Sprite;
-
 	bStatic=True
 	bHidden=True
+    bEdShouldSnap = true
 }
 
 final delegate EventSpawned(VehiclePickup_TA Pickup){}

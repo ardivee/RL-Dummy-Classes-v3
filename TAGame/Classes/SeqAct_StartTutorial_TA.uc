@@ -16,20 +16,20 @@ defaultproperties
 	
 	bCallHandler=false
     bAutoActivateOutputLinks=false
-    InputLinks(0)=(LinkDesc="Start",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-    OutputLinks(0)=(LinkDesc="Ended",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    OutputLinks(1)=(LinkDesc="Completed",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    OutputLinks(2)=(LinkDesc="Failed",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    OutputLinks(3)=(LinkDesc="Screen Faded In",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    OutputLinks(4)=(LinkDesc="Screen Faded Out",bHasImpulse=false,bDisabled=false,bDisabledPIE=false,LinkedOp=none,ActivateDelay=0.0,DrawY=0,bHidden=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0,PIEActivationTime=0.0,bIsActivated=false)
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Instigator",PropertyName=Instigator,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    InputLinks(0)=(LinkDesc="Start")
+    OutputLinks(0)=(LinkDesc="Ended")
+    OutputLinks(1)=(LinkDesc="Completed")
+    OutputLinks(2)=(LinkDesc="Failed")
+    OutputLinks(3)=(LinkDesc="Screen Faded In")
+    OutputLinks(4)=(LinkDesc="Screen Faded Out")
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Instigator",PropertyName=Instigator,bWriteable=false)
     ObjName="Start Tutorial"
 }
 
 event Activated ()
 {
-	local PlayerController_TA PC;
-    local GameEvent_Tutorial_TA GameEvent_Tutorial;
+	//local PlayerController_TA PC;
+    //local GameEvent_Tutorial_TA GameEvent_Tutorial;
 	
 	//Return
 }

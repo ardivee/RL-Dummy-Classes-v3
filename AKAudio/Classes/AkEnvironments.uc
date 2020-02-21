@@ -40,7 +40,7 @@ struct AkActorEnvironment
 
     structdefaultproperties
     {
-        Environments=none
+        //Environments=none
         TargetActor=none
     }
 };

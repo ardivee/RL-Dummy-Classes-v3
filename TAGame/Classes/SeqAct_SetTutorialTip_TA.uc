@@ -13,7 +13,7 @@ var() private array<private name> ActionNames;
 defaultproperties
 {
     bCallHandler=false
-    VariableLinks=none
+    //VariableLinks=none
     ObjName="Set Tutorial Tip"
 	ObjCategory="TAGame"
 }
