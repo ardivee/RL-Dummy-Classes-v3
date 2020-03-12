@@ -24,5 +24,7 @@ defaultproperties
   Begin Object Class=ArrowComponent Name=Arrow
   End Object
   Components.Add(Arrow)
+
+  bEdShouldSnap = true
 	
 }

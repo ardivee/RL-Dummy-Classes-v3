@@ -15,8 +15,8 @@ defaultproperties
     bPlayerOnly=false
     OutputLinks(0)=(LinkDesc="On Touch")
     OutputLinks(1)=(LinkDesc="Already Touched")
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Ball",PropertyName=Originator,bWriteable=true)
-    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Car",PropertyName=Instigator,bWriteable=true)
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Ball",PropertyName=Originator,bWriteable=false)
+    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="Car",PropertyName=Instigator,bWriteable=false)
     ObjName="Car Touch Ball"
 	ObjCategory="TAGame"
 }
