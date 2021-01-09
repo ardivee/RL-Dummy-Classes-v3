@@ -7,4 +7,5 @@ These .uc files are required to make interesting maps for Rocket League. They en
 * LiveDimensions - v1
 * timunrue - v2
 * Ardivee - v3
-* MrPhil - DynamicMeshActor_TA
+* MrPhil - DynamicMeshActor_TA, new kismet nodes
+* Newk - Dozens of new kismet nodes
