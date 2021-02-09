@@ -24,6 +24,10 @@ var() private VehiclePickup_Boost_TA.EBoostType BoostType;
 
 defaultproperties
 {
+    CylinderComponent=DefaultCollisionCylinder
+    Components(0)=DefaultCollisionCylinder
+    Components(1)=none
+    CollisionComponent=DefaultCollisionCylinder
 	Begin Object Class=SpriteComponent Name=Sprite
 		Sprite=Texture2D'EditorResources.S_KVehFact'
 		Scale=2
