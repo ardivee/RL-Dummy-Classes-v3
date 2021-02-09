@@ -39,10 +39,10 @@ var() private duplicatetransient editconst FXActor_X FXActor;
 var private FXActorEvent_X PickedUpEvent;
 var private FXActorEvent_X LocalPickedUpEvent;
 var private export editinline CylinderComponent CylinderComponent;
-var private privatewrite repnotify transient PickupData ReplicatedPickupData;
-var private privatewrite repnotify transient PickupData2 NewReplicatedPickupData;
-var private privatewrite bool bNetRelevant;
-var private privatewrite repnotify transient bool bNoPickup;
+var private repnotify transient PickupData ReplicatedPickupData;
+var private repnotify transient PickupData2 NewReplicatedPickupData;
+var private bool bNetRelevant;
+var private repnotify transient bool bNoPickup;
 var private delegate<EventSpawned> __EventSpawned__Delegate;
 var private delegate<EventPickedUp> __EventPickedUp__Delegate;
 
@@ -68,6 +68,7 @@ defaultproperties
     bCollideActors=true
     NetUpdateFrequency=1.0
     CollisionComponent=DefaultCollisionCylinder
+    Components.Add(Sprite)
 }
 final delegate EventSpawned(VehiclePickup_TA Pickup)
 {  /*Function decompiling is disabled */ }

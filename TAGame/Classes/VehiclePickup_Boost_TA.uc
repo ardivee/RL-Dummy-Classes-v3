@@ -24,13 +24,19 @@ var() private VehiclePickup_Boost_TA.EBoostType BoostType;
 
 defaultproperties
 {
-    begin object name=DefaultCollisionCylinder class=CylinderComponent
-        ReplacementPrimitive=none
-    object end
     CylinderComponent=DefaultCollisionCylinder
     Components(0)=DefaultCollisionCylinder
     Components(1)=none
     CollisionComponent=DefaultCollisionCylinder
+	Begin Object Class=SpriteComponent Name=Sprite
+		Sprite=Texture2D'EditorResources.S_KVehFact'
+		Scale=2
+		HiddenGame=True
+		AlwaysLoadOnClient=False
+		AlwaysLoadOnServer=False
+		SpriteCategoryName="VehiclePickupBoost"
+	End Object
+	Components.Add(Sprite)
 }
 
 protected function bool CanPickup(Car_TA Car){}
