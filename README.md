@@ -9,3 +9,6 @@ These .uc files are required to make interesting maps for Rocket League. They en
 * Ardivee - v3
 * MrPhil - DynamicMeshActor_TA, new kismet nodes
 * Newk - Dozens of new kismet nodes
+* glhglh - Numerous fixes
+
+And none of it would be possible without Martinn's hard work on the decryption tools: https://github.com/Martinii89/Unreal-Library
