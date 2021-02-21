@@ -13,7 +13,7 @@ var() private export editinline ActorComponent_X AttachingComponent;
 defaultproperties
 {
     bCallHandler=false
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkedVariables=none,LinkDesc="AttachTo",LinkVar=None,PropertyName=AttachTo,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Object',LinkDesc="AttachTo",LinkVar=None,PropertyName=AttachTo,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
     ObjName="Create Attach Component"
 	ObjCategory="TAGame_decrypted"
 }

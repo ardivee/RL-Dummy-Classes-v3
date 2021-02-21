@@ -13,7 +13,7 @@ var() private array<private LinearColor> OrangeColors;
 defaultproperties
 {
     bCallHandler=false
-    VariableLinks=none
+    // VariableLinks=none
     ObjName="Set Stadium Team Colors"
 	ObjCategory="TAGame_decrypted"
 }

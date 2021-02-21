@@ -12,7 +12,7 @@ var() private int CountdownTime;
 defaultproperties
 {
     CountdownTime=3
-    VariableLinks=none
+    // VariableLinks=none
     ObjName="MatchCountdown"
 	ObjCategory="TAGame_decrypted"
 }
