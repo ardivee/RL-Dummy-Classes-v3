@@ -15,8 +15,8 @@ defaultproperties
 {
     MaxTriggerCount=0
     bPlayerOnly=false
-    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkedVariables=none,LinkDesc="Primary",LinkVar=None,PropertyName=Primary,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkedVariables=none,LinkDesc="Secondary",LinkVar=None,PropertyName=Secondary,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    VariableLinks(0)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkDesc="Primary",LinkVar=None,PropertyName=Primary,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
+    VariableLinks(1)=(ExpectedType=Class'Engine.SeqVar_Vector',LinkDesc="Secondary",LinkVar=None,PropertyName=Secondary,bWriteable=false,bSequenceNeverReadsOnlyWritesToThisVar=false,bModifiesLinkedObject=false,bHidden=false,MinVars=1,MaxVars=255,DrawX=0,CachedProperty=none,bAllowAnyType=false,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
     ObjName="Stadium Team Colors Changed"
 	ObjCategory="TAGame_decrypted"
 }

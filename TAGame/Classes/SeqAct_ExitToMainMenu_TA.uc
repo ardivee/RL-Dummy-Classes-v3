@@ -10,7 +10,7 @@ class SeqAct_ExitToMainMenu_TA extends SequenceAction
 defaultproperties
 {
     bCallHandler=false
-    VariableLinks=none
+    // VariableLinks=none
     ObjName="Exit To Main Menu"
 	ObjCategory="TAGame"
 }

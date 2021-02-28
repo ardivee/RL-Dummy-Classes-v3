@@ -14,7 +14,7 @@ defaultproperties
     ColorToUse=(R=0.0,G=0.0,B=0.0,A=1.0)
     InputLinks(0)=(LinkDesc="On",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
     InputLinks(1)=(LinkDesc="Off",bHasImpulse=false,QueuedActivations=0,bDisabled=false,bDisabledPIE=false,LinkedOp=none,DrawY=0,bHidden=false,ActivateDelay=0.0,bMoving=false,bClampedMax=false,bClampedMin=false,OverrideDelta=0)
-    VariableLinks=none
+    // VariableLinks=none
     ObjName="Set Green Screen"
 	ObjCategory="TAGame_decrypted"
 }

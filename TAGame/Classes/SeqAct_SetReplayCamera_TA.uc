@@ -18,7 +18,7 @@ defaultproperties
     Rotation=(Pitch=-3000,Yaw=0,Roll=0)
     FOV=90.0
     bCallHandler=false
-    VariableLinks=none
+    // VariableLinks=none
     ObjName="Set Replay Camera"
 	ObjCategory="TAGame"
 }

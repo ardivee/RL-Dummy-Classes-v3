@@ -139,6 +139,289 @@ enum EMirrorFieldType
     MFT_MAX
 };
 
+enum EUIMenuState
+{
+    UIMS_StartMenu,
+    UIMS_MainMenu,
+    UIMS_MAX
+};
+
+enum EChatChannel
+{
+    EChatChannel_Match,
+    EChatChannel_Team,
+    EChatChannel_Party,
+    EChatChannel_Individual,
+    EChatChannel_MAX
+};
+
+enum ESkinType
+{
+    EST_Default,
+    EST_Animated,
+    EST_AnimatedPrimaryOnly,
+    EST_NonAnimatedPrimaryOnly,
+    EST_MAX
+};
+
+enum EProductThumbnailSize
+{
+    PTS_Garage,
+    PTS_Drop,
+    PTS_Preview,
+    PTS_ShopItem,
+    PTS_MAX
+};
+
+enum ESaveGameResult
+{
+    SaveGameResult_Pending,
+    SaveGameResult_Success,
+    SaveGameResult_UserNotSignedIn,
+    SaveGameResult_Error,
+    SaveGameResult_NoSpace,
+    SaveGameResult_Corrupt,
+    SaveGameResult_MAX
+};
+
+enum ETrainingSaveType
+{
+    ETS_MyTraining,
+    ETS_Favorited,
+    ETS_Downloaded,
+    ETS_MAX
+};
+
+enum EPawnType
+{
+    PT_Player,
+    PT_Spectator,
+    PT_Editor,
+    PT_MAX
+};
+
+enum EHistoryType
+{
+    HT_None,
+    HT_Undo,
+    HT_Redo,
+    HT_MAX
+};
+
+enum EHistory
+{
+    H_None,
+    H_Add,
+    H_Remove,
+    H_MAX
+};
+
+enum EEquipAction
+{
+    EquipAction_Both,
+    EquipAction_Team0,
+    EquipAction_Team1,
+    EquipAction_MAX
+};
+
+enum EEditingType
+{
+    ET_FreeCam,
+    ET_Ball,
+    ET_Car,
+    ET_MAX
+};
+
+enum ECustomMatchSettingsType
+{
+    CustomMatchSettingsType_PrivateMatch,
+    CustomMatchSettingsType_LocalMatch,
+    CustomMatchSettingsType_TourCreate,
+    CustomMatchSettingsType_MAX
+};
+
+enum EPaintColorVariant
+{
+    PaintColorVariant_Primary,
+    PaintColorVariant_LightAccent,
+    PaintColorVariant_DarkAccent,
+    PaintColorVariant_Emissive,
+    PaintColorVariant_DeEmissive,
+    PaintColorVariant_Complementary,
+    PaintColorVariant_Balanced,
+    PaintColorVariant_Tertiary,
+    PaintColorVariant_Additive,
+    PaintColorVariant_Unused3,
+    PaintColorVariant_Unused4,
+    PaintColorVariant_Unused5,
+    PaintColorVariant_MAX
+};
+
+enum EPaintFinishType
+{
+    PaintFinishType_Standard,
+    PaintFinishType_Metallic,
+    PaintFinishType_MAX
+};
+
+enum EGarageState
+{
+    EGS_GarageComplex_TA,
+    EGS_CenterCarFocus,
+    EGS_CustomizeCenterCar,
+    EGS_CenterCarScreenshot,
+    EGS_CarSelect,
+    EGS_PresetSelect,
+    EGS_CarSwap,
+    EGS_EditingRowProduct,
+    EGS_LockedSlot,
+    EGS_SlotFocus,
+    EGS_CustomizeSlotFocus,
+    EGS_SlotScreenshot,
+    EGS_MAX
+};
+
+enum ETrinaryBool
+{
+    TrinaryBool_Irrelevant,
+    TrinaryBool_False,
+    TrinaryBool_True,
+    TrinaryBool_MAX
+};
+
+enum EMTXCatalogCategory
+{
+    MTX_None,
+    MTX_Keys,
+    MTX_EventCrates,
+    MTX_EsportsTokens,
+    MTX_RocketBucks,
+    MTX_StarterPack,
+    MTX_StandardPack,
+    MTX_MAX
+};
+
+enum ECameraSettingsPreset
+{
+    CameraSettingsPreset_Default,
+    CameraSettingsPreset_Balanced,
+    CameraSettingsPreset_Wide,
+    CameraSettingsPreset_Custom,
+    CameraSettingsPreset_Legacy,
+    CameraSettingsPreset_MAX
+};
+
+enum EForceFeedbackType
+{
+    ForceFeedbackType_Disabled,
+    ForceFeedbackType_VeryLight,
+    ForceFeedbackType_Light,
+    ForceFeedbackType_Medium,
+    ForceFeedbackType_Heavy,
+    ForceFeedbackType_Legacy,
+    ForceFeedbackType_MAX
+};
+
+enum EForceFeedbackMode
+{
+    ForceFeedbackMode_Disabled,
+    ForceFeedbackMode_Impact,
+    ForceFeedbackMode_All,
+    ForceFeedbackMode_MAX
+};
+
+enum EHUDMessageLevel
+{
+    HUDMessageLevel_All,
+    HUDMessageLevel_GameUpdates,
+    HUDMessageLevel_Essential,
+    HUDMessageLevel_MAX
+};
+
+enum ENameplateMode
+{
+    NameplateMode_DistanceFade,
+    NameplateMode_AlwaysVisible,
+    NameplateMode_Simplified,
+    NameplateMode_MAX
+};
+
+enum EGameplayMusicSetting
+{
+    GameplayMusic_Off,
+    GameplayMusic_TraningOnly,
+    GameplayMusic_MatchesOnly,
+    GameplayMusic_AlwaysOn,
+    GameplayMusic_MAX
+};
+
+enum EMusicStingersSetting
+{
+    MusicStingers_Off,
+    MusicStingers_MatchesOnly,
+    MusicStingers_AlwaysOn,
+    MusicStingers_MAX
+};
+
+enum EV2TutorialType
+{
+    V2T_Basic_1,
+    V2T_Skills_1,
+    V2T_Skills_2,
+    V2T_Aerials,
+    V2T_BasicTeam,
+    V2T_AdvancedTeam,
+    V2T_MAX
+};
+
+enum EMatchTieBreaker
+{
+    MatchTieBreaker_FirstScore,
+    MatchTieBreaker_Random,
+    MatchTieBreaker_MAX
+};
+
+enum EPresenceGroup
+{
+    EPG_Offline,
+    EPG_Online,
+    EPG_InGame,
+    EPG_Friends,
+    EPG_MAX
+};
+
+enum EPersonaInfoOrigin
+{
+    PersonaOrigin_Platform,
+    PersonaOrigin_PsyNet,
+    PersonaOrigin_Epic,
+    PersonaOrigin_MAX
+};
+
+enum EMainMenuBackground
+{
+    MMBG_Default,
+    MMBG_UtopiaSnow,
+    MMBG_HauntedStation,
+    MMBG_Beach,
+    MMBG_Beach_Night,
+    MMBG_Halloween,
+    MMBG_China,
+    MMBG_ParkDay,
+    MMBG_Music,
+    MMBG_ThrowbackHockey,
+    MMBG_MAX
+};
+
+enum ETieBreakDecision
+{
+    TBD_None,
+    TBD_Goals,
+    TBD_Shots,
+    TBD_CoinToss,
+    TBD_MAX
+};
+
 struct PlayerTitleDataSet
 {
     var int Titles[16];
