@@ -865,6 +865,20 @@ struct SimilarLogoGroup
 
 };
 
+struct native ProductWithSettings
+{
+    var() private ProductAsset_TA Product;
+    var() private ProductPaint_TA Paint;
+    var() private DataAsset_ESportsTeam_TA ESportsTeam;
+
+    structdefaultproperties
+    {
+        Product=none
+        Paint=none
+        ESportsTeam=none
+    }
+};
+
 /**
 var delegate<ProductLoadedDelegate> __ProductLoadedDelegate__Delegate;
 

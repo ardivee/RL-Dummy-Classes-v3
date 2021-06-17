@@ -15,8 +15,10 @@ var() float TireFrictionScale;
 var() name AkSwitchValue;
 var() bool bStickyWheels;
 var() bool bConsiderForGround;
+var() private float GroundToleranceZ;
 
 defaultproperties
 {
     bConsiderForGround=true
+    GroundToleranceZ=0.960
 }
