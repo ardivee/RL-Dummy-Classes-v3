@@ -6,7 +6,9 @@
 class Goal_TA extends ActorComponent_X;
 
 var() private const Actor GoalOrientation;
+var() private const Actor ReplayOrientation;
 var() private array<private Actor> OverrideGoalIndicatorOrientations;
+var() private Vector SaveCheckDirectionOffset;
 var() private byte TeamNum;
 var() private FXActor_X ScoreFX;
 var() private const string GoalIndicatorArchetype;
@@ -34,6 +36,7 @@ var private protectedwrite transient Box WorldBox;
 
 defaultproperties
 {
+    SaveCheckDirectionOffset=(X=1.0,Y=0.0,Z=0.0)
     bEnabled=true
     PointsToAward=1
     AutoCamFocusExtent=(X=2250.0,Y=4250.0,Z=4000.0)
