@@ -177,7 +177,7 @@ var(Rendering) const bool bIgnoreOwnerHidden;
  * Setting this to FALSE will cause artifacts with dominant light shadows and potentially large performance loss,
  * So it should be TRUE on all lit objects, setting it to FALSE is mostly only useful for debugging.
  */
-var bool bUseAsOccluder;
+var() bool bUseAsOccluder;
 
 /** If this is True, this component doesn't need exact occlusion info. */
 var(Rendering) bool bAllowApproximateOcclusion;
